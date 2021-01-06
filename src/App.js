@@ -6,24 +6,20 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
             thingList: [
                 { name: 'Coffee'},
                 { name: 'Biscuit'},
                 { name: 'Tea'},
                 { name: 'Bread'}
             ]
-
         }
         this.onCreated = this.onCreated.bind(this);
     }
 
     onCreated(thing) {
-
         const things = [...this.state.things, thing];
         thing.id = things.length
         this.setState({ things })
-
     }
 
     render() {
