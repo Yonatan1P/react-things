@@ -41,9 +41,7 @@ class ThingList extends Component {
     render() {
         return(
             <div>
-
             <ThingForm onCreated={this.props.onCreated} />
-
             <ul>
                 {this.props.things.map(thing => (
                     <ThingItem key={thing.id} name={thing.name} />
